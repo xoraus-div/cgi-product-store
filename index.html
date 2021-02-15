@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+
+    <title>Products Showcase | CGI.com</title>
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/icons/favicon-32x32.ico">
+
+
+    <style>
+        .selectt {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+
+            <!-- close sidebar menu -->
+            <div class="dismiss">
+                <i class="fas fa-chevron-left" style="color:#fff;"></i>
+            </div>
+
+            <div class="logo">
+                <!-- <h3>
+                    <a href="https://www.cgi.com/en"></a>
+                </h3> -->
+                <!-- <img src="assets/icons/CGI-Logo2012-color-jpg/logo_cgi_color_jpg-removebg-preview.png" style="width:80%;"> -->
+                <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300.9 140" xml:space="preserve" role="img" aria-label="CGI official logo" height="54px" style="margin-left: 40px;">
+                    <style type="text/css">
+                        .st0{fill:#E11937;}
+                    </style>
+                    <g id="Layer_1">
+                        <g>
+                            <path class="st0" d="M74.8,27c-27.4,0-44.2,21.4-44.2,43c0,26,21.2,43,44.4,43c15.4,0,30-6.8,42.4-17.8v32.2
+          c-13,7.8-30.8,12.6-44.6,12.6C33.2,140,0,107.8,0,70C0,30,33.4,0,73,0c15.2,0,33,4.6,44.6,10.4V42C103,32.4,88.2,27,74.8,27z"></path>
+                            <path class="st0" d="M201.6,140c-39.8,0-73.4-31-73.4-70c0-39.4,33.4-70,75.2-70c15.2,0,34,4,45.6,9.4v31.4
+          C235.8,33.2,218.8,27,204,27c-27.4,0-45.2,21.4-45.2,43c0,25.4,21,43.8,45.6,43.8c5.2,0,10.2-0.4,16.6-2.8V85.8h-22.4V59.2h51.2
+          V130C235.2,136.6,218.8,140,201.6,140z"></path>
+                            <path class="st0" d="M272.1,137.2V2.8h28.8v134.4L272.1,137.2L272.1,137.2z"></path>
+                        </g>
+                    </g>
+                    <g id="Protection">
+                    </g>
+                    <g id="Guides">
+                    </g>
+                </svg>
+            </div>
+
+            <ul class="list-unstyled menu-elements">
+                <div style="padding-left: 10px;padding-bottom: 10px;font-weight: bold;font-size: 1.2em;">Navigation:</div>
+                <li class="active">
+                    <a class="scroll-link" href="#top-content"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li>
+                    <a class="scroll-link" href="#section-1"><i class="fas fa-server"></i> Products</a>
+                </li>
+                <li>
+                    <a class="scroll-link" href="https://www.cgi.com/en#"><i class="fas fa-phone"></i> Contact</a>
+                </li>
+                <!-- <li>
+                    <a class="scroll-link" href="#section-2"><i class="fas fa-user"></i> About us</a>
+                </li>
+                <li>
+                    <a class="scroll-link" href="#section-5"><i class="fas fa-pencil-alt"></i> Portfolio</a>
+                </li>
+                <li>
+                    <a class="scroll-link" href="#section-6"><i class="fas fa-envelope"></i> Contact us</a>
+                </li>
+                <li>
+                    <a href="#otherSections" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" role="button" aria-controls="otherSections">
+                        <i class="fas fa-sync"></i>Other sections
+                    </a>
+                    <ul class="collapse list-unstyled" id="otherSections">
+                        <li>
+                            <a class="scroll-link" href="#section-3">Our projects</a>
+                        </li>
+                        <li>
+                            <a class="scroll-link" href="#section-4">We think that...</a>
+                        </li>
+                    </ul>
+                </li> -->
+            </ul>
+
+            <ul class="list-unstyled menu-elements">
+                <div style="padding-left: 10px;padding-bottom: 10px;font-weight: bold;font-size: 1.2em;">Filters:</div>
+
+                <li class="active" style="padding-left: 20px;">
+                    <label class="containerck">Business
+                        <input type="checkbox" value="biznez" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                    <label class="containerck">Technology
+                        <input type="checkbox" value="tecc" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                    <label class="containerck">Automation
+                        <input type="checkbox" value="ai" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                </li>
+            </ul>
+
+            <div class="to-top">
+                <a class="btn btn-primary btn-customized-3" role="button" id="clrfltr" style="border-radius: 0%;background-color: #cc0033;cursor: pointer;">
+                    <i class="fas fa-backspace"></i> CLEAR FILTERS
+                </a>
+            </div>
+
+        </nav>
+        <!-- End sidebar -->
+
+        <!-- Dark overlay -->
+        <div class="overlay"></div>
+
+        <!-- Content -->
+        <div class="content">
+
+            <!-- open sidebar menu -->
+            <a class="btn open-menu" href="#" role="button" style="border-radius: 0%;">
+                <i class="fas fa-chevron-right" style="color:#fff;"></i> <span style="color:#fff;font-size: 16px;font-weight: 300;">FILTER</span>
+            </a>
+
+            <!-- Top content -->
+            <div class="top-content section-container" id="top-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                            <h1 class="wow fadeIn">
+                                <strong>
+                                    <!-- <img src="assets/icons/CGI-Logo2012-color-jpg/logo_cgi_color_jpg-removebg-preview.png" style="width:120px;"> -->
+                                    <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300.9 140" xml:space="preserve" role="img" aria-label="CGI official logo" height="36px" class="logosvg">
+                                        <style type="text/css">
+                                            .st0{fill:#E11937;}
+                                        </style>
+                                        <g id="Layer_1">
+                                            <g>
+                                                <path class="st0" d="M74.8,27c-27.4,0-44.2,21.4-44.2,43c0,26,21.2,43,44.4,43c15.4,0,30-6.8,42.4-17.8v32.2
+                              c-13,7.8-30.8,12.6-44.6,12.6C33.2,140,0,107.8,0,70C0,30,33.4,0,73,0c15.2,0,33,4.6,44.6,10.4V42C103,32.4,88.2,27,74.8,27z"></path>
+                                                <path class="st0" d="M201.6,140c-39.8,0-73.4-31-73.4-70c0-39.4,33.4-70,75.2-70c15.2,0,34,4,45.6,9.4v31.4
+                              C235.8,33.2,218.8,27,204,27c-27.4,0-45.2,21.4-45.2,43c0,25.4,21,43.8,45.6,43.8c5.2,0,10.2-0.4,16.6-2.8V85.8h-22.4V59.2h51.2
+                              V130C235.2,136.6,218.8,140,201.6,140z"></path>
+                                                <path class="st0" d="M272.1,137.2V2.8h28.8v134.4L272.1,137.2L272.1,137.2z"></path>
+                                            </g>
+                                        </g>
+                                        <g id="Protection">
+                                        </g>
+                                        <g id="Guides">
+                                        </g>
+                                    </svg>
+                                    <span style="font-size: 36pt;">Products</span>
+                                </strong>
+                            </h1>
+                            <div class="description wow fadeInLeft">
+                                <p>
+                                    An in-depth view of all the products/solutions created and maintained by CGI Technologists.
+                                </p>
+                            </div>
+                            <div class="buttons wow fadeInUp">
+                                <a class="btn btn-primary btn-customized scroll-link" href="https://www.cgi.com/en#" role="button" style="border-radius: 0%;">
+                                    <i class="fas fa-phone"></i> CONTACT
+                                </a>
+                                <a class="btn btn-primary btn-customized-2 scroll-link" href="https://www.cgi.com/en/it-outsourcing-services" role="button" style="border-radius: 0%;">
+                                    <i class="fas fa-laptop-code"></i> IT SERVICES
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 1 -->
+            <div class="section-1-container section-container" id="section-1">
+                <div class="container">
+                    <!-- <div class="row">
+                        <div class="col section-1 section-description wow fadeIn">
+                            <h2>What We Do</h2>
+                            <div class="divider-1 wow fadeInUp"><span></span></div>
+                        </div>
+                    </div> -->
+                    <div style="height: 20px;"></div>
+                    <div class="row">
+                        <div class="col-md-4 section-1-box wow fadeInUp biznez selectt" style="padding-right:30px; padding-left:30px;">
+                            <div class="row" style="padding: 20px 10px;box-shadow: 2px 2px 16px 0px rgba(189,189,189,1);border-right: 1px solid #cc0033;border-left: 1px solid #cc0033;">
+                                <div class="col-md-12">
+                                    <h3><i class="fas fa-briefcase"></i> &nbsp; Business</h3>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">DOCS</button>
+                                        </div>
+                                        <div class="col-5" style="text-align: center;">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">OVERVIEW</button>
+                                        </div>
+                                        <div class="col">
+                                            <button data-toggle="modal" data-target="#myModal" style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">DEMO</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 section-1-box wow fadeInUp biznez selectt" style="padding-right:30px; padding-left:30px;">
+                            <div class="row" style="padding: 20px 10px;box-shadow: 2px 2px 16px 0px rgba(189,189,189,1);border-right: 1px solid #cc0033;border-left: 1px solid #cc0033;">
+                                <div class="col-md-12">
+                                    <h3><i class="fas fa-briefcase"></i> &nbsp; Business</h3>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">DOCS</button>
+                                        </div>
+                                        <div class="col-5" style="text-align: center;">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">OVERVIEW</button>
+                                        </div>
+                                        <div class="col">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">DEMO</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 section-1-box wow fadeInUp biznez selectt" style="padding-right:30px; padding-left:30px;">
+                            <div class="row" style="padding: 20px 10px;box-shadow: 2px 2px 16px 0px rgba(189,189,189,1);border-right: 1px solid #cc0033;border-left: 1px solid #cc0033;">
+                                <div class="col-md-12">
+                                    <h3><i class="fas fa-briefcase"></i> &nbsp; Business</h3>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">DOCS</button>
+                                        </div>
+                                        <div class="col-5" style="text-align: center;">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">OVERVIEW</button>
+                                        </div>
+                                        <div class="col">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">DEMO</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div style="height: 20px;"></div>
+                    <div class="row">
+                        <div class="col-md-4 section-1-box wow fadeInUp tecc selectt" style="padding-right:30px; padding-left:30px;">
+                            <div class="row" style="padding: 20px 10px;box-shadow: 2px 2px 16px 0px rgba(189,189,189,1);border-right: 1px solid #cc0033;border-left: 1px solid #cc0033;">
+                                <div class="col-md-12">
+                                    <h3><i class="fas fa-microchip"></i> &nbsp; Technology</h3>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">DOCS</button>
+                                        </div>
+                                        <div class="col-5" style="text-align: center;">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">OVERVIEW</button>
+                                        </div>
+                                        <div class="col">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">DEMO</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 section-1-box wow fadeInUp tecc selectt" style="padding-right:30px; padding-left:30px;">
+                            <div class="row" style="padding: 20px 10px;box-shadow: 2px 2px 16px 0px rgba(189,189,189,1);border-right: 1px solid #cc0033;border-left: 1px solid #cc0033;">
+                                <div class="col-md-12">
+                                    <h3><i class="fas fa-microchip"></i> &nbsp; Technology</h3>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">DOCS</button>
+                                        </div>
+                                        <div class="col-5" style="text-align: center;">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">OVERVIEW</button>
+                                        </div>
+                                        <div class="col">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">DEMO</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 section-1-box wow fadeInUp tecc selectt" style="padding-right:30px; padding-left:30px;">
+                            <div class="row" style="padding: 20px 10px;box-shadow: 2px 2px 16px 0px rgba(189,189,189,1);border-right: 1px solid #cc0033;border-left: 1px solid #cc0033;">
+                                <div class="col-md-12">
+                                    <h3><i class="fas fa-microchip"></i> &nbsp; Technology</h3>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">DOCS</button>
+                                        </div>
+                                        <div class="col-5" style="text-align: center;">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">OVERVIEW</button>
+                                        </div>
+                                        <div class="col">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">DEMO</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div style="height: 20px;"></div>
+                    <div class="row">
+                        <div class="col-md-4 section-1-box wow fadeInUp ai selectt" style="padding-right:30px; padding-left:30px;">
+                            <div class="row" style="padding: 20px 10px;box-shadow: 2px 2px 16px 0px rgba(189,189,189,1);border-right: 1px solid #cc0033;border-left: 1px solid #cc0033;">
+                                <div class="col-md-12">
+                                    <h3><i class="fas fa-project-diagram"></i> &nbsp; Automation</h3>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">DOCS</button>
+                                        </div>
+                                        <div class="col-5" style="text-align: center;">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">OVERVIEW</button>
+                                        </div>
+                                        <div class="col">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">DEMO</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 section-1-box wow fadeInUp ai selectt" style="padding-right:30px; padding-left:30px;">
+                            <div class="row" style="padding: 20px 10px;box-shadow: 2px 2px 16px 0px rgba(189,189,189,1);border-right: 1px solid #cc0033;border-left: 1px solid #cc0033;">
+                                <div class="col-md-12">
+                                    <h3><i class="fas fa-project-diagram"></i> &nbsp; Automation</h3>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">DOCS</button>
+                                        </div>
+                                        <div class="col-5" style="text-align: center;">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">OVERVIEW</button>
+                                        </div>
+                                        <div class="col">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">DEMO</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 section-1-box wow fadeInUp ai selectt" style="padding-right:30px; padding-left:30px;">
+                            <div class="row" style="padding: 20px 10px;box-shadow: 2px 2px 16px 0px rgba(189,189,189,1);border-right: 1px solid #cc0033;border-left: 1px solid #cc0033;">
+                                <div class="col-md-12">
+                                    <h3><i class="fas fa-project-diagram"></i> &nbsp; Automation</h3>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">DOCS</button>
+                                        </div>
+                                        <div class="col-5" style="text-align: center;">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">OVERVIEW</button>
+                                        </div>
+                                        <div class="col">
+                                            <button style="border:none; padding:2px 8px;color: rgb(36, 36, 36);background-color: #fff; border-bottom: 1px solid  #cc0033;">DEMO</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Footer -->
+            <footer class="footer-container">
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col">
+                            &copy; 2020 <a href="https://www.cgi.com/en">CGI Inc.</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </footer>
+
+        </div>
+        <!-- End content -->
+
+    </div>
+    <!-- End wrapper -->
+
+
+    <!-- Modal HTML -->
+    <!-- <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">YouTube Video</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe id="cartoonVideo" width="560" height="315" src="//www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content  rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color:rgb(36, 36, 36);">Demo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="cartoonVideo" src="https://www.youtube.com/embed/N-Z8eCYZod8" frameborder="0" allowfullscreen width="100%"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal" style="background-color: #cc0033;color:#fff;border-radius: 0%;">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <!-- Toggle Products using checkboxes -->
+    <script type="text/javascript">
+        //show/hide on click
+        $(document).ready(function() {
+            $('input[type="checkbox"]').click(function() {
+                var inputValue = $(this).attr("value");
+                $("." + inputValue).toggle();
+            });
+        });
+
+        //show all which are checked
+        $("input:checked").each(function() {
+            var inputValue = $(this).attr("value");
+            $("." + inputValue).toggle();
+        });
+
+        //clear filter button logic
+        $('#clrfltr').click(function(e) {
+            $("input:checked").each(function(i, item) {
+                $(item).attr('checked', !$(item).is(':checked'));
+                var inputValue = $(this).attr("value");
+                $("." + inputValue).toggle();
+            });
+        });
+
+        $(document).ready(function() {
+            /* Get iframe src attribute value i.e. YouTube video url
+            and store it in a variable */
+            var url = $("#cartoonVideo").attr('src');
+
+            /* Assign empty url value to the iframe src attribute when
+            modal hide, which stop the video playing */
+            $("#myModal").on('hide.bs.modal', function() {
+                $("#cartoonVideo").attr('src', '');
+            });
+
+            /* Assign the initially stored url back to the iframe src
+            attribute when modal is displayed again */
+            $("#myModal").on('show.bs.modal', function() {
+                $("#cartoonVideo").attr('src', url);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
